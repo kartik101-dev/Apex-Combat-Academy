@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join APEX Fight Club in Nagpur. Submit your call sign, fight focus, and claim your place in the circle.">
+    <title>Join | APEX Fight Club</title>
+    <link rel="stylesheet" href="apex.css">
+</head>
+<body>
+    <header>
+        <nav class="topbar">
+            <div class="brand">
+                <div class="logo">APEX FIGHT CLUB<span>_</span></div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Apex.html">The Circle</a></li>
+                <li><a href="programs.html">Disciplines</a></li>
+                <li><a href="schedule.html">Fight Nights</a></li>
+                <li><a href="contact.html" class="active-link" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page no-hero">
+        <h2>Claim Your Spot</h2>
+        <div class="section-subtitle">Submit your call sign, fight focus, and why you belong in the ring.</div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; margin-top: 40px; align-items: start;">
+            
+            <div style="width: 100%; max-width: 340px; aspect-ratio: 1 / 1; border: 1px solid var(--border); background: var(--surface); padding: 15px; display: flex; align-items: center; justify-content: center; justify-self: center;">
+                <div style="width: 100%; height: 100%; overflow: hidden; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1680022546558-550eaf22351e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TU1BJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" 
+                         alt="APEX Combat Preparation" 
+                         style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                         onerror="this.onerror=null; this.src='https://picsum.photos/id/445/400/400?grayscale';">
+                </div>
+            </div>
+
+            <div class="form-wrapper" style="margin-top: 0; max-width: 100%; width: 100%;">
+                <div style="margin-bottom: 30px;">
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">
+                        Contact directly: <a href="mailto:websitetesting191@gmail.com" style="color: var(--accent); text-decoration: none;">websitetesting191@gmail.com</a>
+                    </p>
+                </div>
+
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label for="user-name">Call Sign / Name</label>
+                        <input type="text" name="name" id="user-name" placeholder="Identify yourself..." required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="user-email">Secure Email</label>
+                        <input type="email" name="email" id="user-email" placeholder="Where to send orders..." required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="user-batch">Operational Window (Batch)</label>
+                        <select name="selected_batch" id="user-batch" required>
+                            <option value="" disabled selected hidden>Choose a night...</option>
+                            <option value="Batch Alpha (0600 - 0800)">Alpha // 0600 - 0800</option>
+                            <option value="Batch Bravo (0800 - 1000)">Bravo // 0800 - 1000</option>
+                            <option value="Batch Charlie (1000 - 1200)">Charlie // 1000 - 1200</option>
+                            <option value="Batch Delta (1400 - 1600)">Delta // 1400 - 1600</option>
+                            <option value="Batch Echo (1600 - 1800)">Echo // 1600 - 1800</option>
+                            <option value="Batch Foxtrot (1800 - 2000)">Foxtrot // 1800 - 2000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="user-msg">Why You Fight</label>
+                        <textarea name="message" id="user-msg" placeholder="Tell us your background, goals, and why you're ready for the circle." required></textarea>
+                    </div>
+                    
+                    <div id="form-status" style="margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;"></div>
+                    <button type="submit" id="submit-btn">Enter the Circle</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>APEX Fight Club — stop delaying. Step inside or step aside.</p>
+            <p>Nagpur Underground // Active Protocol</p>
+        </div>
+    </footer>
+
+    <script src="Apex.js"></script>
+</body>
+</html>
